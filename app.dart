@@ -1,9 +1,30 @@
-// konversi celcius ke fahrenheit
-import 'dart:io';
-
 void main() {
-  stdout.write("Masukan suhu celcius : ");
-  double c = double.parse(stdin.readLineSync()!);
-  double f = (c * 1.8000) + 32.00;
-  print('$c derajat celcius = $f derajat fahrenheit');
+  var dicodingCat = Animal('Gray', 2, 4.2);
+
+  dicodingCat.eat();
+  dicodingCat.poop();
+
+  print(dicodingCat.weight);
+}
+
+class Animal {
+  String name;
+  int age;
+  double weight;
+
+  Animal(this.name, this.age, this.weight);
+
+  void eat() {
+    print('$name is eating.');
+    weight = weight + 0.2;
+  }
+
+  void sleep() {
+    print('$name is sleeping.');
+  }
+
+  void poop() {
+    print('$name is pooping.');
+    weight = weight - 0.1;
+  }
 }
