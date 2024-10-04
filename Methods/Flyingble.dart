@@ -1,0 +1,3 @@
+class Flyingble {
+  void flying() {}
+}

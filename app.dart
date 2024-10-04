@@ -4,7 +4,7 @@ void main() {
   try {
     var bird = Bird('Pipit', 2, 0);
     bird.flying();
-    bird.eat();
+    bird.sound();
   } catch (e) {
     print(e);
   } finally {
